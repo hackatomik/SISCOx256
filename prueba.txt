@@ -1,1 +1,1 @@
-prueba de archivo de texto github
+Prueba de archivo de texto GitHub.
