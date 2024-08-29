@@ -97,5 +97,4 @@ Esta experiencia de aprendizaje ha sido posible gracias a la inspiración de de 
 
 Especialmente si te interesa programar full stack en JavaScript, estos recursos son 1000% recomendables.
 
-# Ventaja de linux
-**manejo de los paths**
+
