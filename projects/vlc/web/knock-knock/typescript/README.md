@@ -1,1 +1,1 @@
-# Knock Knock Server (TypeScript Edition: `Node.js`)
+# Knock Knock Server (TypeScript Edition)
