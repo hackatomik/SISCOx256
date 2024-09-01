@@ -82,6 +82,10 @@ El curso consta de 2 videos de múltiples horas, lo imparte Brais Moure ([MoureD
 
 [![Curso de Lógica de Programación Parte II](https://img.youtube.com/vi/b-kk1WQo-YA/0.jpg)](https://www.youtube.com/watch?v=b-kk1WQo-YA)
 
+**Parte III:**
+
+[![Curso de Lógica de Programación Parte III](https://img.youtube.com/vi/ASBC5drF-QU/0.jpg)](https://www.youtube.com/watch?v=ASBC5drF-QU)
+
 Recuerda que cada proyecto de programación es una oportunidad para practicar Git y GitHub. ¿Por qué no construir tu portafolio en GitHub mientras avanzas en el curso? ¡Así guardas tu progreso y demuestras al mundo tus habilidades!
 
 ## Marcos de trabajo ágiles y Scrum implementado en GitHub
