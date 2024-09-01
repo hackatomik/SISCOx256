@@ -72,7 +72,7 @@ Aquí te mostramos un video breve de [Brais Moure](https://mouredev.com) como in
 
 Sin importar el lenguaje con el que programes, esta información te será de utilidad. La serie de videos que compartimos aquí se trata de un curso de "Lógica de Programación" con la mayoría de ejercicios ejemplificados con Python pero que están diseñados para adaptarlo a tu lenguaje de programación de preferencia.
 
-El curso consta de 2 videos de múltiples horas, lo imparte Brais Moure ([MoureDev](https://mouredev.com)) y te dará fundamentos sólidos para cualquiera de tus proyectos de software.
+El curso consta de 3 videos de múltiples horas, lo imparte Brais Moure ([MoureDev](https://mouredev.com)) y te dará fundamentos sólidos para cualquiera de tus proyectos de software.
 
 **Parte I:**
 
@@ -88,9 +88,103 @@ El curso consta de 2 videos de múltiples horas, lo imparte Brais Moure ([MoureD
 
 Recuerda que cada proyecto de programación es una oportunidad para practicar Git y GitHub. ¿Por qué no construir tu portafolio en GitHub mientras avanzas en el curso? ¡Así guardas tu progreso y demuestras al mundo tus habilidades!
 
+## GitHub para Ciencias de la Computación en Acción: `CS50`
+
+Con los recursos proveídos anteriormente se pueden establecer buenas bases tanto de los sistemas de control de versiones y gestión de proyectos de software como la lógica necesaria para programar eficientemente. Sin embargo, aunque importante, es solo el principio. Son herramientas que le ayudan a cualquiera independientemente del rol que desempeñen a futuro, pero aún así a menudo es confuso encontrar una ruta estructurada para seguir aprendiendo.
+
+Cursos tanto gratuitos como de pago existen muchos para escoger dependiendo de las preferencias de cada quién. Mucho más que el recurso de aprendizaje en sí lo de mayor importancia es ser consistente con la ruta escogida y siempre practicar, todos los días.
+
+Teniendo eso en consideración, recomendamos fuertemente los cursos que provee Harvard gratuitamente (solo se paga por la certificación) en edX: [CS50](https://edx.org/cs50). Consiste de una serie de cursos abiertos y con el más alto nivel académico, incluyendo todo el material y las experiencias que se les imparten a los estudiantes de Harvard. Ahí se muestra la ruta a seguir para aprender a programar en muchas áreas que se pueden elegir, tales como web, ciberseguridad, inteligencia artificial, etc.
+
+Para completar satisfactoriamente los laboratorios de CS50, es necesario manejar una cuenta de GitHub y así poder usar los [GitHub Codespacces](https://docs.github.com/en/codespaces) que se proveen.
+
+Este video realiza una introducción y reseña al material de CS50.
+
+_Harvard's Free coding courses are excellent. You need to take them._
+
+[![Harvard's Free coding courses are excellent. You need to take them.](https://img.youtube.com/vi/WwEcPcfRlD0/0.jpg)](https://www.youtube.com/watch?v=WwEcPcfRlD0)
+
+Todas las clases (_"lectures"_) están disponibles tanto en edX como en YouTube. Aquí se puede ver la primera clase que se enfoca en Scratch: **lógica y algoritmos** para programar. Algo destacable de los cursos de CS50 es que se trata de un curso de programación orientado a la lógica, no a la sintaxis de lenguajes de programación. Por eso en el curso introductorio (CS50x) se enseñan varios lenguajes de programación comunes así como los diferentes paradigmas que poseen. El objetivo no es dominar una tecnología específica sino aprender a **resolver problemas**.
+
+_CS50x 2024 - Lecture 0 - Scratch_
+
+[![CS50x 2024 - Lecture 0 - Scratch](https://img.youtube.com/vi/3LPJfIKxwWc/0.jpg)](https://www.youtube.com/watch?v=3LPJfIKxwWc)
+
+Para acceder a todo el catálogo de los cursos de CS50 se puede visitar [este enlace](https://www.edx.org/cs50).
+
 ## Marcos de trabajo ágiles y Scrum implementado en GitHub
 
 🚧🚧 Próximamente.
+
+## Roles en Tecnología
+
+🚧🚧 Próximamente.
+
+## Herramientas de los profesionales altamente efectivos: _optimizar tu LinkedIn, GitHub, CV, elevator pitch y red de contactos_
+
+### Perfil de LinkedIn: _tu presencia digital_
+
+¡Revisando LinkedIn de la comunidad! ¡Dando consejos y cosas a mejorar!
+
+[![¡Revisando LinkedIn de la comunidad! ¡Dando consejos y cosas a mejorar!](https://img.youtube.com/vi/5sxcXdj6tjs/0.jpg)](https://www.youtube.com/watch?v=5sxcXdj6tjs)
+
+### Perfil de GitHub: _tu portafolio_
+
+¿Qué hace que un GitHub sea "bueno"?
+
+[![¿Qué hace que un GitHub sea "bueno"?](https://img.youtube.com/vi/FKuwHUzAkQ4/0.jpg)](https://www.youtube.com/watch?v=FKuwHUzAkQ4)
+
+¿Cómo crear el PROYECTO PERFECTO para tu PORTAFOLIO como programador?
+
+[![¿Cómo crear el PROYECTO PERFECTO para tu PORTAFOLIO como programador?](https://img.youtube.com/vi/5W4NgYsoNM4/0.jpg)](https://www.youtube.com/watch?v=5W4NgYsoNM4)
+
+¿Cómo crear el PORTAFOLIO PERFECTO para PROGRAMADORES?
+
+[![¿Cómo crear el PORTAFOLIO PERFECTO para PROGRAMADORES?](https://img.youtube.com/vi/zFbTXe1yFGA/0.jpg)](https://www.youtube.com/watch?v=zFbTXe1yFGA)
+
+### Curriculum Vitae (CV): _tu experiencia profesional_
+
+TRUCOS para mejorar tu CV para ser contratado por Leonardo Poza [miduConf]
+
+[![TRUCOS para mejorar tu CV para ser contratado por Leonardo Poza [miduConf]](https://img.youtube.com/vi/ybQ9x37FXlA/0.jpg)](https://www.youtube.com/watch?v=ybQ9x37FXlA)
+
+### Elevator pitch: _¿Quién eres?_
+
+The Best Way To Answer “So What Do You Do?” | Clay Hebert | TEDxReno
+
+[![The Best Way To Answer “So What Do You Do?” | Clay Hebert | TEDxReno](https://img.youtube.com/vi/Ow9qahWkFeQ/0.jpg)](https://www.youtube.com/watch?v=Ow9qahWkFeQ)
+
+Sell Your Ideas the Steve Jobs Way
+
+[![Sell Your Ideas the Steve Jobs Way](https://img.youtube.com/vi/0q-wvAIeUgk/0.jpg)](https://www.youtube.com/watch?v=0q-wvAIeUgk)
+
+### Habilidades blandas: _comunicación, liderazgo, construir tu red de contactos y más_
+
+**Comunicación**
+
+Think Fast, Talk Smart: Communication Techniques
+
+[![Think Fast, Talk Smart: Communication Techniques](https://img.youtube.com/vi/HAnw168huqA/0.jpg)](https://www.youtube.com/watch?v=HAnw168huqA)
+
+**Networking: red de contactos**
+
+Tom Friel: How to Network
+
+[![Tom Friel: How to Network](https://img.youtube.com/vi/rW-Ui6j60AM/0.jpg)](https://www.youtube.com/watch?v=rW-Ui6j60AM)
+
+Effective Ways of Engaging in Small Group Networking Conversations
+
+[![Effective Ways of Engaging in Small Group Networking Conversations](https://img.youtube.com/vi/WO7AFZWjy0E/0.jpg)](https://www.youtube.com/watch?v=WO7AFZWjy0E)
+
+**Liderazgo**
+
+Great leadership starts with self-leadership | Lars Sudmann | TEDxUCLouvain
+
+[![Great leadership starts with self-leadership | Lars Sudmann | TEDxUCLouvain](https://img.youtube.com/vi/vlpKyLklDDY/0.jpg)](https://www.youtube.com/watch?v=vlpKyLklDDY)
+
+Career Pathways to Executive Management (the full video)
+
+[![Career Pathways to Executive Management (the full video)](https://img.youtube.com/vi/etnIIZRgI4g/0.jpg)](https://www.youtube.com/watch?v=etnIIZRgI4g)
 
 ## Agradecimientos
 
