@@ -5,10 +5,23 @@ const socket = await Bun.connect({
 
   socket: {
     data(socket, data: Buffer) {
-      console.log("Received data:", data.toString());
+      const message = data.toString().trim();
+      console.log("Server:", message);
+      if (message === "Bye.") {
+        socket.end();
+      } else {
+        const userInput = prompt("Client: ");
+        if (userInput != null) {
+          socket.write(userInput + "\n");
+        }
+      }
     },
     open(socket) {
-      socket.write("Who's there?");
+      console.log("Connected to server");
+      const userInput = prompt("Client: ");
+      if (userInput != null) {
+        socket.write(userInput + "\n");
+      }
     },
     close(socket) {
       console.log("Connection closed");

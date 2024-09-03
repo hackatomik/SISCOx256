@@ -32,7 +32,7 @@ export function processInput(theInput: string): string {
         "Try again. Knock! Knock!";
     }
   } else if (state === SENT_CLUE) {
-    if (theInput.toLowerCase() === clues[currentJoke] + "who?") {
+    if (theInput.toLowerCase() === `${clues[currentJoke].toLowerCase()} who?`) {
       theOutput = answers[currentJoke] + " Want another? (y/n)";
       state = ANOTHER;
     } else {
