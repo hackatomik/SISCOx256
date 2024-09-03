@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb2cdc5e-7941-409d-b363-8fd9b76ce10d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Presentacion" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KnockKnockClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/KnockKnockClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KnockKnockProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/KnockKnockProtocol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KnockKnockServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/KnockKnockServer.java" afterDir="false" />
@@ -24,12 +23,12 @@
     &quot;assignee&quot;: &quot;Memowara6&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Memowara6/KnockKnockServer.git",
-    "accountId": "420dd6bf-aea0-4f0c-b358-e9c69232d57c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Memowara6/KnockKnockServer.git&quot;,
+    &quot;accountId&quot;: &quot;420dd6bf-aea0-4f0c-b358-e9c69232d57c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -44,7 +43,7 @@
     "Application.KnockKnockServer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging master",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Carlo/Desktop/Personal/Proyectos_Personales/KnockKnockServer"
   }
