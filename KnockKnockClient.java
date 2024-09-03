@@ -35,10 +35,10 @@ import java.net.*;
 
 public class KnockKnockClient {
     public static void main(String[] args) throws IOException {
-        
+
         if (args.length != 2) {
             System.err.println(
-                "Usage: java EchoClient <host name> <port number>");
+                    "Usage: java KnockKnockClient <host name> <port number>");
             System.exit(1);
         }
 
@@ -46,13 +46,13 @@ public class KnockKnockClient {
         int portNumber = Integer.parseInt(args[1]);
 
         try (
-            Socket kkSocket = new Socket(hostName, portNumber);
-            PrintWriter out = new PrintWriter(kkSocket.getOutputStream(), true);
-            BufferedReader in = new BufferedReader(
-                new InputStreamReader(kkSocket.getInputStream()));
+                Socket kkSocket = new Socket(hostName, portNumber);
+                PrintWriter out = new PrintWriter(kkSocket.getOutputStream(), true);
+                BufferedReader in = new BufferedReader(
+                        new InputStreamReader(kkSocket.getInputStream()));
         ) {
             BufferedReader stdIn =
-                new BufferedReader(new InputStreamReader(System.in));
+                    new BufferedReader(new InputStreamReader(System.in));
             String fromServer;
             String fromUser;
 
@@ -60,7 +60,7 @@ public class KnockKnockClient {
                 System.out.println("Server: " + fromServer);
                 if (fromServer.equals("Bye."))
                     break;
-                
+
                 fromUser = stdIn.readLine();
                 if (fromUser != null) {
                     System.out.println("Client: " + fromUser);
@@ -72,7 +72,8 @@ public class KnockKnockClient {
             System.exit(1);
         } catch (IOException e) {
             System.err.println("Couldn't get I/O for the connection to " +
-                hostName);
+                    hostName);
             System.exit(1);
         }
     }
+}

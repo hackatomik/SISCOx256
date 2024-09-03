@@ -40,17 +40,16 @@ public class KnockKnockProtocol {
     private static final int ANOTHER = 3;
 
 
-
     private int state = WAITING;
     private int currentJoke = 5;
 
-    private String[] clues = { "Turnip", "Little Old Lady", "Atch", "Who", "Who" , "Cash"};
-    private String[] answers = { "Turnip the heat, it's cold in here!",
-                                 "I didn't know you could yodel!",
-                                 "Bless you!",
-                                 "Is there an owl in here?",
-                                 "Is there an echo in here?",
-                                "No thanks, I prefer almonds"};
+    private String[] clues = {"Turnip", "Little Old Lady", "Atch", "Who", "Who", "Cash"};
+    private String[] answers = {"Turnip the heat, it's cold in here!",
+            "I didn't know you could yodel!",
+            "Bless you!",
+            "Is there an owl in here?",
+            "Is there an echo in here?",
+            "No thanks, I prefer almonds"};
     private int NUMJOKES = answers.length;
 
     public String processInput(String theInput) {
@@ -65,17 +64,17 @@ public class KnockKnockProtocol {
                 state = SENTCLUE;
             } else {
                 theOutput = "You're supposed to say \"Who's there?\"! " +
-			    "Try again. Knock! Knock!";
+                        "Try again. Knock! Knock!";
             }
         } else if (state == SENTCLUE) {
             if (theInput.equalsIgnoreCase(clues[currentJoke] + " who?")) {
                 theOutput = answers[currentJoke] + " Want another? (y/n)";
                 state = ANOTHER;
             } else {
-                theOutput = "You're supposed to say \"" + 
-			    clues[currentJoke] + 
-			    " who?\"" + 
-			    "! Try again. Knock! Knock!";
+                theOutput = "You're supposed to say \"" +
+                        clues[currentJoke] +
+                        " who?\"" +
+                        "! Try again. Knock! Knock!";
                 state = SENTKNOCKKNOCK;
             }
         } else if (state == ANOTHER) {
@@ -93,3 +92,4 @@ public class KnockKnockProtocol {
         }
         return theOutput;
     }
+}
