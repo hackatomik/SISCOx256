@@ -6,7 +6,7 @@ En este repositorio se registran los proyectos y experiencias de aprendizaje rea
 
 ¿Por qué Linux? ¿Qué es eso de Git?
 
-El uso de la terminal de comandos (con Linux) puede resultar extraño al principio para usuarios casuales de windows. Linux es un sistema operativo libre y de código abierto que es ampliamente utilizado para servidores e incluso sistemas operativos móviles como Android. Al tener esa imponente presencia en la industria, no es de extrañar que la mayoría de herramientas de software se utilicen en Linux y estén optimizadas para funcionar en él (y otros sistemas operativos también basados en Unix como macOS). Windows por su parte tiene una arquitectura fundamentalmente diferente y desarrollar software en su entorno tiende a ser más inconveniente.
+El uso de la terminal de comandos (con Linux) puede resultar extraño al principio para usuarios casuales de Windows. Linux es un sistema operativo libre y de código abierto que es ampliamente utilizado para servidores e incluso sistemas operativos móviles como Android. Al tener esa imponente presencia en la industria, no es de extrañar que la mayoría de herramientas de software se utilicen en Linux y estén optimizadas para funcionar en él (y otros sistemas operativos también basados en Unix como macOS). Windows por su parte tiene una arquitectura fundamentalmente diferente y desarrollar software en su entorno tiende a ser más inconveniente.
 
 Si usas ya sea MacOS o Linux como tu sistema operativo de escritorio, no debes preocuparte pues ya tienen el entorno ideal para programar por defecto. Por otro lado, con Windows se necesita configuración adicional usando WSL (Windows Subsystem for Linux) para poder usar Linux como entorno de ejecución de programas. Ya que Git se usa principalmente desde la terminal de comandos, es muy conveniente ejectuarlo en Linux o MacOS.
 
@@ -34,7 +34,7 @@ Siempre puedes apoyarte con los videos proveidos, la [documentación oficial](ht
 
 ## Herramientas de GitHub a usar
 
-GitHub es una plataforma que facilita el uso de Git y la colaboración de equipos globalmente de forma remota. Las características que cuenta son bastantes y puede resultar abrumador en un principio. Sin embargo, esta es una herramienta fundamental para cualquier profesional de tecnología y con total seguridad se encontrará en el entorno laboral. Incentivamos a que lo aprendas a tu ritmo pero constantemente practicarlo con cada proyecto de software que realices.
+GitHub es una plataforma que facilita el uso de Git y la colaboración de equipos globalmente de forma remota. Las características con las que cuenta son bastantes y puede resultar abrumador en un principio. Sin embargo, esta es una herramienta fundamental para cualquier profesional de tecnología y con total seguridad se encontrará en el entorno laboral. Incentivamos a que lo aprendas a tu ritmo pero constantemente practicarlo con cada proyecto de software que realices.
 
 A continuación te presentamos un video de Brais Moure ([MoureDev](https://mouredev.com)) que explica a profundidad el uso de Git y GitHub para proyectos de software.
 
