@@ -96,13 +96,3 @@ Esta experiencia de aprendizaje ha sido posible gracias a la inspiración de de 
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 Especialmente si te interesa programar full stack en JavaScript, estos recursos son 1000% recomendables.
-
-# me gustaria decir las ventajas de github
-
-1. me ayuda al control de versiones.
-2. es una herramienta muy versatil de trabajo
-3. me ayuda a trabajar equipo
-4. me da bastante seguridad
-5. tiene bastantes codigos y herramientas
-
-
