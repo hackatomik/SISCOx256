@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb2cdc5e-7941-409d-b363-8fd9b76ce10d" name="Changes" comment="" />
+    <list default="true" id="eb2cdc5e-7941-409d-b363-8fd9b76ce10d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Presentacion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KnockKnockClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/KnockKnockClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KnockKnockProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/KnockKnockProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KnockKnockServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/KnockKnockServer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +44,7 @@
     "Application.KnockKnockServer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Carlo/Desktop/Personal/Proyectos_Personales/KnockKnockServer"
   }
