@@ -1,12 +1,34 @@
-// Create WebSocket connection
-const socket = new WebSocket("ws://localhost:3000");
+// The client
+const socket = await Bun.connect({
+  hostname: "localhost",
+  port: 3000,
 
-// Connection opened
-socket.addEventListener("open", (event) => {
-  socket.send("Hello Server!");
-});
+  socket: {
+    data(socket, data: Buffer) {
+      console.log("Received data:", data.toString());
+    },
+    open(socket) {
+      socket.write("Who's there?");
+    },
+    close(socket) {
+      console.log("Connection closed");
+    },
+    drain(socket) {
+      console.log("Drain event");
+    },
+    error(socket, error) {
+      console.log("Error:", error);
+    },
 
-// Listen for messages
-socket.addEventListener("message", (event) => {
-  console.log("Message from server ", event.data);
+    // client-specific handlers
+    connectError(socket, error) {
+      console.log("Connection error:", error);
+    }, // connection failed
+    end(socket) {
+      console.log("Connection ended");
+    }, // connection closed by server
+    timeout(socket) {
+      console.log("Connection timed out");
+    }, // connection timed out
+  },
 });

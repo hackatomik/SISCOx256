@@ -1,23 +1,29 @@
-const server = Bun.serve<{ authToken: string }>({
-  fetch(req, server) {
-    const success = server.upgrade(req);
-    if (success) {
-      // Bun automatically returns a 101 Switching Protocols
-      // if the upgrade succeeds
-      return undefined;
-    }
+import { listen } from "bun";
+import { processInput } from "./protocol.ts";
+import type { Socket } from "bun";
 
-    // handle HTTP request normally
-    return new Response("Hello world!");
-  },
-  websocket: {
-    // this is called when a message is received
-    async message(ws, message) {
-      console.log(`Received ${message}`);
-      // send back a message
-      ws.send(`You said: ${message}`);
+const server = listen({
+  port: 3000,
+  hostname: "localhost",
+  socket: {
+    data(socket: Socket, data: Uint8Array) {
+      const input = data.toString().trim();
+      const response = processInput(input);
+      socket.write(response + "\n");
+      if (response === "Bye.") {
+        socket.end();
+      }
+    },
+    open(socket: Socket) {
+      console.log("Client connected");
+    },
+    close(socket: Socket) {
+      console.log("Client disconnected");
+    },
+    error(socket: Socket, error: Error) {
+      console.error("Error:", error);
     },
   },
 });
 
-console.log(`Listening on ${server.hostname}:${server.port}`);
+console.log(`TCP server is running on port ${server.hostname}:${server.port}`);
