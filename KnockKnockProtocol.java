@@ -43,14 +43,16 @@ public class KnockKnockProtocol {
     private int state = WAITING;
     private int currentJoke = 5;
 
-    private String[] clues = {"Turnip", "Little Old Lady", "Atch", "Who", "Who", "Cash", "Boo"};
+    private String[] clues = {"Turnip", "Little Old Lady", "Atch", "Who", "Who", "Cash", "Boo", "Ice Cream", "Tank"};
     private String[] answers = {"Turnip the heat, it's cold in here!",
             "I didn't know you could yodel!",
             "Bless you!",
             "Is there an owl in here?",
             "Is there an echo in here?",
             "No thanks, I prefer almonds",
-            "Don’t cry, it’s just a joke!"};
+            "Don’t cry, it’s just a joke!",
+            "ICE CREAM SO YOU CAN HEAR ME!",
+            "You're welcome."};
     private int NUMJOKES = answers.length;
 
     public String processInput(String theInput) {
