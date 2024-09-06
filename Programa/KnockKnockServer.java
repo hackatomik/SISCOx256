@@ -28,9 +28,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */ 
-
 import java.net.*;
 import java.io.*;
+import java.util.concurrent.*;
 
 public class KnockKnockServer {
     public static void main(String[] args) throws IOException {
@@ -42,31 +42,50 @@ public class KnockKnockServer {
 
         int portNumber = Integer.parseInt(args[0]);
 
-        try ( 
+        try (
             ServerSocket serverSocket = new ServerSocket(portNumber);
             Socket clientSocket = serverSocket.accept();
-            PrintWriter out =
-                new PrintWriter(clientSocket.getOutputStream(), true);
-            BufferedReader in = new BufferedReader(
-                new InputStreamReader(clientSocket.getInputStream()));
+            PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         ) {
-        
-            String inputLine, outputLine;
+            // Establecer un tiempo límite para las respuestas del cliente
+            clientSocket.setSoTimeout(10000); // 10 segundos de timeout
             
-            // Initiate conversation with client
+            String inputLine, outputLine;
             KnockKnockProtocol kkp = new KnockKnockProtocol();
             outputLine = kkp.processInput(null);
             out.println(outputLine);
 
+            ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+            ScheduledFuture<?> timeoutTask = null;
+
             while ((inputLine = in.readLine()) != null) {
+                if (timeoutTask != null && !timeoutTask.isDone()) {
+                    timeoutTask.cancel(true);
+                }
+
+                timeoutTask = scheduler.schedule(() -> {
+                    System.out.println("Cliente no respondió a tiempo, cerrando conexión...");
+                    try {
+                        in.close();
+                        out.close();
+                        clientSocket.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }, 10, TimeUnit.SECONDS);
+
                 outputLine = kkp.processInput(inputLine);
                 out.println(outputLine);
-                if (outputLine.equals("Bye."))
+                if (outputLine.equals("Bye.")) {
                     break;
+                }
             }
+            scheduler.shutdownNow();
+        } catch (SocketTimeoutException ste) {
+            System.out.println("Cliente inactivo durante demasiado tiempo. Desconectando...");
         } catch (IOException e) {
-            System.out.println("Exception caught when trying to listen on port "
-                + portNumber + " or listening for a connection");
+            System.out.println("Exception caught when trying to listen on port " + portNumber + " or listening for a connection");
             System.out.println(e.getMessage());
         }
     }
