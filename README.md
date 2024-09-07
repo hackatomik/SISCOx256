@@ -96,3 +96,4 @@ Esta experiencia de aprendizaje ha sido posible gracias a la inspiración de de 
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 Especialmente si te interesa programar full stack en JavaScript, estos recursos son 1000% recomendables.
+ # Clase Github Testing o practica
