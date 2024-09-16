@@ -40,6 +40,12 @@ A continuación te presentamos un video de Brais Moure ([MoureDev](https://moure
 
 [![Curso de Git y GitHub](https://img.youtube.com/vi/3GymExBkKjE/0.jpg)](https://www.youtube.com/watch?v=3GymExBkKjE)
 
+Adicionalmente, otro aspecto importante del desarrollo de software además del control de versiones es la documentación. Debido a que git funciona mejor con texto plano, **markdown** es el formato preferido para la documentación. De hecho, este documento README.md que estás leyendo está escrito en markdown. Por este motivo se evita el uso de archivos binarios como PDF, Word, etc. Markdown será necesario para que cada grupo (_tribu_) describa sus proyectos y propuestas de valor para el semestral. Aquí pueden ver un video de YouTube creado por _Fazt Code_ que explica cómo usar el lenguaje de marcado markdown.
+
+_Markdown, Curso Práctico para principiantes y desarrolladores_
+
+[![Markdown, Curso Práctico para principiantes y desarrolladores](https://img.youtube.com/vi/oxaH9CFpeEE/0.jpg)](https://www.youtube.com/watch?v=oxaH9CFpeEE)
+
 ### GitHub [Discussions](https://docs.github.com/en/discussions)
 
 Esta es la primera feature que usaremos en **este curso.** Se trata de un espacio donde se pueden publicar temas de discusión, generar conversaciones y conseguir respuestas a las dudas que se tengan.
