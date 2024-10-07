@@ -43,7 +43,7 @@ public class KnockKnockProtocol {
     private int state = WAITING;
     private int currentJoke = 5;
 
-    private String[] clues = {"Turnip", "Little Old Lady", "Atch", "Who", "Who", "Cash", "Boo", "Ice Cream", "Tank", "Tuba"};
+    private String[] clues = {"Turnip", "Little Old Lady", "Atch", "Who", "Who", "Cash", "Boo", "Ice Cream", "Tank", "Tuba","thermos"};
     private String[] answers = {"Turnip the heat, it's cold in here!",
             "I didn't know you could yodel!",
             "Bless you!",
@@ -52,7 +52,8 @@ public class KnockKnockProtocol {
             "No thanks, I prefer almonds",
             "Don’t cry, it’s just a joke!",
             "ICE CREAM SO YOU CAN HEAR ME!",
-            "You're welcome.", "Tuba toothpaste. Now brush your teeth."};
+            "You're welcome.", "Tuba toothpaste. Now brush your teeth.",
+                               "Thermos be a better punchline than this!"};
     private int NUMJOKES = answers.length;
 
     public String processInput(String theInput) {
