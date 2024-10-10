@@ -1,5 +1,18 @@
 import { google } from "googleapis";
 
+import Link from "next/link";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+import { VideoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+
 export default async function Tribu({ params }: { params: { id: string } }) {
   // Auth
   const auth = await google.auth.getClient({
@@ -51,17 +64,63 @@ export default async function Tribu({ params }: { params: { id: string } }) {
   }
 
   return (
-    <article>
-      <h1>Tribu {tribe.name}</h1>
+    <div className="flex min-h-screen flex-col items-center gap-8">
       <div>
-        <p>{tribe.projectName}</p>
-        <p>{tribe.members}</p>
-        <p>{tribe.room}</p>
-        <p>{tribe.videoUrl}</p>
-        <p>{tribe.repoUrl}</p>
-        <p>{tribe.readme}</p>
-        <p>{tribe.stack}</p>
+        <p>
+          <strong>{tribe.name}</strong> presenta:
+        </p>
+        <h1 className="text-4xl font-bold">{tribe.projectName}</h1>
       </div>
-    </article>
+      <section className="flex flex-col items-center gap-8">
+        <div>
+          <p>
+            <strong>Hecho por: </strong>
+            {tribe.members}
+          </p>
+          <p>
+            <strong>Salón: </strong>
+            {tribe.room}
+          </p>
+        </div>
+        <div className="flex flex-row gap-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Video</CardTitle>
+              <CardDescription>Elevator Pitch</CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col items-center">
+              <Link href={tribe.videoUrl}>
+                <VideoIcon className="size-20" />
+              </Link>
+            </CardContent>
+            <CardFooter>
+              <p>
+                <em>&quot;Slogan&quot;</em>
+              </p>
+            </CardFooter>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Código</CardTitle>
+              <CardDescription>
+                Repositorio de GitHub y tecnologías
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col items-center">
+              <Link href={tribe.repoUrl}>
+                <GitHubLogoIcon className="size-20" />
+              </Link>
+            </CardContent>
+            <CardFooter>
+              <p>Tech stack: {tribe.stack}</p>
+            </CardFooter>
+          </Card>
+        </div>
+        <article>
+          <h2 className="mb-2 text-2xl font-medium">README</h2>
+          <p>{tribe.readme}</p>
+        </article>
+      </section>
+    </div>
   );
 }
